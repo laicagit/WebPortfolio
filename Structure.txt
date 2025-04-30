@@ -1,0 +1,19 @@
+Structure
+
+1. HOME
+	- Website title
+	- Photo of Me (Laica Keint Laureles)
+	- My social Media
+	
+2. ABOUT
+	- My name and details about me
+	- Contact (Phone number and cvsu email address)
+	- Interests
+	- Software
+
+3. PROJECTS/PROJECT SHOWCASE
+	- My projects in ITECT 101
+	- Other projects/past projects
+
+4. QUIZZES
+	- My quizzes in the subject ITEC 101
