@@ -1,0 +1,803 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #f4f3ea;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo img{
+    margin-left: 30px;
+    width: 60px;
+}
+
+.socials {
+    background-color: rgba(233, 185, 67, 0.4); /* 0.4 means 40% opacity */
+    width: 3%;
+    height: 30%;
+    position: absolute;
+    top: 55%;
+    left: 100px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 10;
+    align-items: center;
+    padding: 1rem 0;
+    border-radius: 10px;
+}  
+  
+.socials img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+  
+.socials img:hover {
+    transform: scale(1.2);
+}
+  
+nav {
+    display: flex;
+    
+}
+
+nav a {
+    color: #3c8765;
+    font-family: "Single Day", cursive;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    font-weight: 300;
+    font-style: normal;
+    transform: 0.3s ease;
+    text-transform: none;
+    border-bottom: 3px solid transparent;
+}
+
+nav a.active {
+    color: #3d2b14;
+    border-bottom: 3px solid #59720e;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem; 
+    justify-content: space-between;
+    padding: 1rem;
+   
+}
+
+nav a:hover,
+nav a:active {
+    color: #3d2b14;
+    border-bottom: 3px solid #59720e;
+}
+
+nav a:link, .logo {
+    text-decoration: none;
+}
+
+header {
+    background-color: antiquewhite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 11%;
+    padding: 1rem 3%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+}
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/homebg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3; /* adjust transparency here */
+    z-index: -1; /* place it behind the content */
+  }
+
+  .quizzes::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/quizzesbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3; /* adjust transparency here */
+    z-index: -1; /* place it behind the content */
+  }
+
+.home-img img {
+    position: absolute;
+    margin-top: 10%;
+    top: 0;
+    left: 0;
+    margin-left: 4%;
+    width: 85%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Behind the image */
+.behind-text {
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+  
+  /* Above the image */
+.above-text {
+    position: absolute;
+    top: 70%;
+    left: 5%; /* Pushes it away from the left edge */
+    z-index: 2;
+    text-align: left;
+}
+
+.home-content h1 {
+    color:#3d2b14;
+    font-family: "Single Day", cursive;
+    font-size:15rem;
+    font-style: bold;
+    top: 0;
+    margin-bottom: 40%;
+}
+
+.home-content p {
+    top: 0;
+    margin-bottom:100px;
+    color:#59720e;
+    font-family: "Single Day", cursive;
+    font-style: bold;
+    font-size: 2rem;
+}
+
+.home-content.above img {
+    height: 2.5rem;
+    width: auto;
+    margin-bottom:105px;
+  }
+
+.home-content.above {
+    position: absolute;
+    right: 22%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: right;
+}
+  
+.banner-img {
+    margin-top: 10px;
+    width: 300px;
+    height: auto;    
+  }
+
+.about {
+    background-color: rgba(233, 185, 67, 0.4);
+    padding: 10px;
+}
+
+.banner h1 {
+    font-family: "Single Day", cursive; 
+    font-size: 3rem;
+    color: #3d2b14;
+    
+}
+  
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; 
+    margin-top: 50px; 
+    padding-top: 35px;
+}
+
+.aboutimg img{
+    margin: 0;
+    width: 500px;  
+    height: auto; 
+    margin-left: 10%;
+}
+
+.intro-text {
+    font-family: "Single Day", cursive;
+    font-size: 1.5rem;
+    font-style: bold;
+    margin-left: 33%;
+    color: #3c8765;
+}
+  
+.contact-info {
+    display: flex;
+    margin-left: 23%;
+    gap: 1rem;
+    margin-top: 0.5rem;
+
+}
+  
+.contact-info img {
+    width: 24px;
+    height: 24px;
+}
+  
+.contact-info p {
+    font-family: "National Park", sans-serif;
+    font-size: 1.2rem;
+    color: #3d2b14;
+    margin: 0;
+}
+  
+.search-bar {
+    display: flex;
+    background-color: white;
+    border: 2px solid #59720e;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 20px;
+    padding: 2px 10px;
+    margin-left: 500px;
+    width: 250px;  /* You can adjust this value as needed */
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-family: "Single Day", cursive;
+    font-size: 1rem;
+    background-color: transparent;
+    width: 100%;  /* Ensure input fills the width of the search bar */
+  }
+  
+  .search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #3c8765;
+  }
+  
+  /* Removes the default dropdown arrow in Chrome */
+input::-webkit-calendar-picker-indicator {
+    display: none !important;
+  }
+  
+  input::-webkit-search-decoration,
+  input::-webkit-search-cancel-button,
+  input::-webkit-search-results-button,
+  input::-webkit-search-results-decoration {
+    display: none;
+  }
+
+  .suggestion-box {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 2px solid #59720e;
+    border-top: none;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 99;
+    border-radius: 0 0 10px 10px;
+    font-family: "Single Day", cursive;
+  }
+  
+  .suggestion-box div {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+.suggestion-box div:hover {
+    background-color: #f0f0f0;
+}
+  
+.about-text {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent */
+    border-left: 5px solid #e9b943;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Single Day', cursive;
+    font-size: 1.3rem;
+    color: #3d2b14;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+
+  
+.about-text .highlight {
+    color: #59720e;
+    font-weight: bold;
+}
+  
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .highlight {
+    font-family: "Single Day", cursive;
+  }
+  
+  .about-text {
+    flex: 2;
+    margin: 0;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 5px solid #e9b943;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: "National Park", sans-serif;
+    font-size: .95rem;
+    line-height: 1.5;
+    color: #3d2b14;
+  }
+
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+
+  .skills h1 {
+    margin-bottom: 1rem;
+    font-family: "Single Day", cursive;
+    font-size: 2rem;
+    color: #3c8765;
+  }
+  
+  .skills img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    display: block;
+  }
+
+.text-and-skills {
+    margin-left: 50px;
+ 
+}
+
+.interest {
+    list-style: none;            /* Removes bullets */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;      /* Makes them vertical */
+    gap: 0.5rem;                 /* Space between items */
+    max-width: 200px;            /* Optional: limits the width */
+  }
+  
+  .interest li {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: soft shadow */
+    font-family: "Single Day", cursive;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .about {
+    background-color: rgba(233, 185, 67, 0.4); /* Your existing background */
+    background-image: url("img/barnhouse.png"); /* Replace with your actual image path */
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 500px auto; /* Adjust size as needed */
+    padding-bottom: 3rem; /* Optional: give space for the image */
+  }
+
+  .footer {
+    background-color: #e9b943;
+    color: #3d2b14;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .footer h2 {
+    font-family: "Single Day", cursive;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer p {
+    font-family: "Single Day", cursive;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer-bottom {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  
+  .footer-left {
+    flex: 1;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    flex: 1;
+  }
+  
+  .footer h2,
+  .footer p {
+    margin: 0 0 0.5rem 0;
+  }
+
+  
+  .footer .email {
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Single Day", cursive;
+    color: #3d2b14;
+    margin-top: -1rem;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  
+  .footer-left,
+  .footer-right {
+    flex: 1;
+  }
+  
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .email {
+    margin-top: 0.5rem;
+    font-family: "Single Day", cursive;
+    font-size: 0.9rem;
+    color: #3d2b14;
+  }
+  
+  
+  
+  /* Projects Section */
+.projects {
+    padding: 4rem 2rem;
+    background-color: #fff9ee;
+    color: #3d2b14;
+    font-family: 'Single Day', cursive;
+  }
+  
+  .projects h1 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    color: #3d2b14;
+  }
+  
+  .projects span {
+    color: #e9b943;
+  }
+  
+  .recentprojects,
+  .pastprojects {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .otherproject,
+  .blogproject {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #fdf6e3;
+    border: 5px solid #e9b943;
+    border-radius: 0.5rem;
+  }
+
+  .otherprojects,
+  .blogproject h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pastprojects,
+  .blogproject p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .projects a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: #3d2b14;
+    background-color: #e9b943;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .projects a:hover {
+    background-color: #ffcd5c;
+  }
+
+
+  .projects {
+    display: block;
+    gap: rem;
+  }
+  
+  @media (min-width: 768px) {
+    .projects {
+      flex-direction: row;
+    }
+  
+    .recentprojects,
+    .pastprojects {
+      flex: 1;
+    }
+
+    
+  }
+  .projects-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3%;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .banner-title {
+    font-family: "Single Day", cursive;
+    font-size: 2.5rem;
+    color: #3d2b14;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .banner-img {
+    width: 200px;
+    height: auto;
+  }
+  
+
+  .quizzes {
+    margin-top: 3%;
+
+  }
+
+  .quiz-subheader {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fdf7e2;
+    border: 5px solid #3d2b14;;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  .quiz-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    align-items: center;
+    background-color: #59720e;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 5px solid #3d2b14;;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  
+  .quiz-header h1 {
+    font-family: "Single Day", cursive;
+    font-size: 3.2rem;
+    color: #fdf6e3;
+    margin-bottom: 0.5rem;
+  }
+  
+  .quiz-header p {
+    font-family: "Single Day", cursive;
+    font-size: 1rem;
+    margin: 0.3rem 0;
+  }
+  
+  .quiz-header p span {
+    font-weight: bold;
+    color: #d88c0f;
+  }
+  
+  .quiz-subheader {
+    margin-top: 1.5rem;
+    overflow-x: auto;
+  }
+  
+  .quiz-subheader table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .quiz-subheader th,
+  .quiz-subheader td {
+    font-family: "Single Day", cursive;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    border: 1px solid #e0c97b;
+  }
+
+  
+  
+  .quiz-subheader th {
+    background-color: #e9b943;
+    color: #3d2b14;
+    font-weight: bold;
+  }
+  
+  .quiz-details {
+    justify-content: center;
+    display: flex;
+    gap: 2rem; 
+    flex-wrap: wrap; 
+    margin: 0.5rem 0 1rem;
+    color: #fdf6e3;
+      
+  }
+
+
+  .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .search-bar button {
+    align-self: flex-end;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .nav-links a {
+    margin-bottom: 0.5rem;
+  }
+
+  .search-bar {
+    margin-top: 1rem;
+  }
+}

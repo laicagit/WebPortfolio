@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&family=Single+Day&display=swap" rel="stylesheet">
+    <title>About me</title>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <img src="img/flower.png" alt="My Portfolio logo">
+      </a>
+  
+      <!-- Hamburger Icon -->
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="quizzes.html">Quizzes</a>
+        <form class="search-bar" onsubmit="handleSearch(event)">
+          <input type="text" id="searchInput" placeholder="Search..." autocomplete="off" list="suggestions" />
+          <button type="submit">
+            <img src="icon/search.png" style="width: 28px;" alt="search icon" class="search-icon" />
+          </button>
+          <datalist id="suggestions">
+            <option value="socials">
+            <option value="facebook">
+            <option value="instagram">
+            <option value="linkedin">
+            <option value="contact">
+            <option value="email">
+            <option value="Projects">
+            <option value="Quizzes">
+          </datalist>
+        </form>
+      </nav>
+    </div>
+  </header>
+  
+
+
+    <div class="about">
+        <div class="banner">
+          <img src="img/flowerbanner.png" alt="flower banner" class="banner-img">
+          <h1 class="banner-title">about me</h1>
+          <img src="img/flowerbanner.png" alt="flower banner" class="banner-img">
+        </div>
+      
+        <div class="about-container">
+          <div class="aboutimg">
+            <img src="img/aboutimage.png" alt="this is me (Laica)">
+            <p class="intro-text"><b>Let's work together!</b></p>
+      
+            <div class="contact-info">
+              <img src="icon/call.png" alt="call icon">
+              <p>+63 977 274 9723</p>
+            </div>
+      
+            <div class="contact-info">
+              <img src="icon/mail.png" alt="mail icon">
+              <p>laicakeint.laureles@cvsu.edu.ph</p>
+            </div>
+          </div>
+          
+            <div class="text-and-skills">
+              <h1 style="text-align: center; font-family: Single Day, cursive; font-size: 4rem; color: #3c8765;">~ Laica Keint Laureles </h1>
+              <div class="about-text">
+                <p>
+                  I’m currently pursuing <span class="highlight"> a Bachelor of Science in Information Technology at Cavite State University – Silang Campus.</span> I have a deep passion for design, creativity, and bringing life into everything I create. I love working with colors and spending time thoughtfully crafting my projects to make them not only visually appealing but also emotionally engaging. My goal is to make every design come alive and connect with users in a way that sparks feeling and excitement.
+                </p>
+              </div>
+
+             
+          
+              <div class="skills">
+                <h1>Interest</h1>
+                <ul class="interest">
+                  <li>drawing</li>
+                  <li>photography</li>
+                  <li>painting</li>
+                  <li>crafting</li>
+                  <li>gaming</li>
+                </ul>
+                <h1>Software</h1>
+                <img src="icon/skillsicon.png" alt="vscode procreate figma icon">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+      
+</body>
+</html>
